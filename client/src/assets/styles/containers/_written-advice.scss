@@ -1,0 +1,84 @@
+.written-advice {
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .head {
+    margin-bottom: 35px;
+    text-align: center;
+    & .title {
+      color: #202f84;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    & .desc {
+      color: #484848;
+      font-size: 18px;
+    }
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    input,
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      width: 300px;
+      height: 50px;
+      border: 1px solid #202f84;
+    }
+    textarea {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #202f84;
+    }
+    & .section-right {
+      margin: 0 37px;
+    }
+  }
+  .ant-upload {
+    button {
+      width: 300px;
+      height: 50px;
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+      span {
+        font-size: 13px;
+        font-weight: 600;
+        color: $primary-color;
+        margin: 0 5px;
+      }
+    }
+  }
+  .ant-upload-text-icon {
+    padding-right: 10px;
+  }
+  .ant-upload-list-item-name-icon-count-1 {
+    padding-right: 30px;
+  }
+  .ant-upload-list-item-list-type-text:hover
+    .ant-upload-list-item-name-icon-count-1 {
+    padding-right: 30px;
+  }
+  .submit-button {
+    width: 420px;
+    height: 46px;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    margin: 35px 0;
+    span {
+      color: $light;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.header {
+  line-height: 62px;
+  background-color: $light;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+  padding: 0;
+  width: 100%;
+  .logo {
+    background: url("../../icons/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+  }
+
+  .ant-menu {
+    background-color: $light;
+    border: none;
+    .ant-menu-item a {
+      font-size: 16px;
+      color: $text-color;
+      font-weight: 600;
+
+      &:hover {
+        font-size: 16px;
+        color: $primary-color;
+      }
+    }
+    .ant-menu-item-selected {
+      border-bottom: 2ps solid $primary-color !important;
+      a {
+        font-size: 16px;
+        color: $primary-color;
+      }
+    }
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    .ant-btn {
+      width: 115px;
+      height: 50px;
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+      margin: 0px 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .signup {
+      span {
+        color: $primary-color;
+      }
+    }
+    .signin {
+      background-color: $primary-color;
+      span {
+        color: $light;
+      }
+    }
+    .lang {
+      background-color: $primary-color;
+      color: $light;
+      width: 50px;
+      position: relative;
+      span {
+        color: $light;
+      }
+      .anticon {
+        position: absolute;
+        right: -7px;
+        top: 40%;
+        background-color: $primary-color;
+        color: $light;
+        border: 1px solid $light;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      font-size: 16px;
+      font-weight: 600;
+      color: $primary-color;
+      margin: 0;
+    }
+    .anticon {
+      font-size: 20px;
+      font-weight: 600;
+      color: $primary-color;
+      margin: 0 15px;
+      border: 1px solid $primary-color;
+      border-radius: 4px;
+      padding: 12px;
+    }
+  }
+}
